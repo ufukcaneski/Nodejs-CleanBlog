@@ -7,5 +7,8 @@ app.get('/', (req, res) => {
         title: 'My first blog post',
         description: 'This is my first blog post'
     }
-    res.send('Hello World!');
+    res.send(blog);
 });
+
+const port = 3000;
+app.listen(port, () => console.log(`Example app listening on port ${port}!`));
